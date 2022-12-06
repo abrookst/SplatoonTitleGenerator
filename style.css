@@ -1,0 +1,27 @@
+html{
+   background-image: url(/images/backgrounds/splatoon3-pattern-02-1920x1080-1.jpg); 
+}
+.inputs {
+    display: flex;  
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.form-group{
+    padding:10px;
+    border:2px solid #4f4f4f;
+    border-radius: 10px;
+    background-color: #4f4f4f;
+    margin:10px;
+}
+
+.content{
+    display: inline-block;
+    width: 100vh;
+    margin: 30px;
+    padding: 20px;
+    align-content: center;
+    border-radius: 10px;
+    background-color: #292e34;
+    color: #ffffff;
+}

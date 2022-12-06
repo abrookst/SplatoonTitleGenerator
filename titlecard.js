@@ -1,5 +1,3 @@
-
-
 function refreshImage(){
     var canvas = document.getElementById("TCGN");
     var ctx = canvas.getContext("2d");
@@ -10,4 +8,6 @@ function refreshImage(){
     ctx.strokeText(SFC.value,10,80);
     var Level = document.getElementById('Level');
     ctx.strokeText(Level.value,10,110);
+    var Rank = document.getElementById('Rank');
+    ctx.strokeText(Rank.value,10,140);
 }
