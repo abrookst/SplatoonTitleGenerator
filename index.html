@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The web site of bigburger</title>
+    <title>Splatoon Title Generator</title>
     <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
@@ -12,8 +12,69 @@
   <body>
     <center>
     <h1>Splatoon 3 Title Generator</h1>
-
-    <canvas id="myCanvas" width="812" height="438" style="border:1px solid #000000; border-radius: 10px;"></canvas>
+    <script src="titlecard.js"></script>
+    <canvas id="TCGN" width="812" height="438" style="border:1px solid #000000; border-radius: 10px;"></canvas>
     </center>
+    <input id="Update" type="button" value="Update" onclick="refreshImage();" />
+    <br>
+    <label for="Username">Username:</label><br>
+    <input type="text" id="Username"><br>
+
+    <label for="SFC">Switch Friend Code:</label><br>
+    <input type="text" id="SFC"><br>
+
+    <label for="Level">Level (Max is 999):</label><br>
+    <input type="number" id="Level" min="1" max="5"><br>
+
+    <label for="Rank">Current Season Rank:</label><br>
+    <select id="Rank">
+      <option value="C-">C-</option>
+      <option value="C">C</option>
+      <option value="C+">C+</option>
+      <option value="B-">B-</option>
+      <option value="B">B</option>
+      <option value="B+">B+</option>
+      <option value="A-">A-</option>
+      <option value="A">A</option>
+      <option value="A+">A+</option>
+      <option value="S">S</option>
+      <option value="S+0-10">S+0-10</option>
+      <option value="S+11-20">S+11-20</option>
+      <option value="S+21-30">S+21-30</option>
+      <option value="S+31-40">S+31-40</option>
+      <option value="S+41-50">S+41-50</option>
+    </select><br>
+
+    <label for="FavStag">Favorite Stage:</label><br>
+    <select id="FavStag">
+      <option value="Scorch Gorge">Scorch Gorge</option>
+      <option value="Eeltail Alley">Eeltail Alley</option>
+      <option value="Hagglefish Market">Hagglefish Market</option>
+      <option value="Undertow Spillway">B-</option>
+      <option value="Mincemeat Metalworks">B</option>
+      <option value="Hammerhead Bridge">B+</option>
+      <option value="Museum d'Alfonsino">A-</option>
+      <option value="Mahi-Mahi Resort">A</option>
+      <option value="Inkblot Art Academy">A+</option>
+      <option value="Sturgeon Shipyard">S</option>
+      <option value="MakoMart">S+0-10</option>
+      <option value="Wahoo World">S+11-20</option>
+      <option value="Flounder Heights">S+0-10</option>
+      <option value="Brinewater Springs">S+11-20</option>
+    </select><br>
+
+    <label for="SRR">Salmon Run Rank:</label><br>
+    <select id="SRR">
+      <option value="Intern">Scorch Gorge</option>
+      <option value="Apprentice">Eeltail Alley</option>
+      <option value="Part-Timer">Hagglefish Market</option>
+      <option value="Go-Getter">B-</option>
+      <option value="Profeshional Part-Timer">B</option>
+      <option value="Profeshional +1">B+</option>
+      <option value="Profeshional +2">A-</option>
+      <option value="Profeshional +3">A</option>
+      <option value="Eggsecutive VP">A+</option>
+    </select><br>
+
   </body>
 </html>
